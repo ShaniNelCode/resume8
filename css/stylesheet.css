@@ -1,0 +1,155 @@
+/*Styling sheet for everything contained within my HTML body*/
+
+body {
+    font-family: sans-serif;
+    font-size: 110%;
+    color: black;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #90D8F4;
+}
+
+
+/*Sets background color with color codes and ad 20px padding*/
+
+.content {
+    background-color: #CAF0F8;
+    padding: 20px;
+    background-color: #90D8F4;
+}
+
+
+/*Sets the type of display for my elements,dictates the direction of display and adddresses the x-and y-axis overflow*/
+
+.main {
+    display: flex;
+    flex-direction: row;
+    overflow: unset;
+}
+
+
+/*An Id selector for a single element-my profile photo within my HTML header tag*/
+
+#profileLarge {
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+    border: 6px solid #90D8F4;
+    /*Sets a border around my profile photo within the header element*/
+}
+
+#profileMedium {
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+    border: 6px solid #90D8F4;
+}
+
+#profileSmall {
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+    border: 6px solid #90D8F4;
+}
+
+
+/*Text alignment of text within my header element selector*/
+
+header {
+    text-align: center;
+    justify-content: center;
+}
+
+
+/*ID selector for header, adjusting text and background color, font type and size*/
+
+.heading {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 130%;
+    background-color: #83C5BE;
+    color: black;
+    padding-top: 10px;
+}
+
+@media screen and (max-width:650px) {
+    #profileSmall {
+        border-radius: 50%;
+        border: 5px solid #90D8F4;
+    }
+}
+
+@media screen and (max-width:1400px) {
+    #profileMedium {
+        border-radius: 50%;
+        border: 5px solid #90D8F4;
+    }
+}
+
+
+/*Font size increase for header 2 elements and color orangered*/
+
+h2 {
+    font-size: 160%;
+    color: orangered;
+}
+
+
+/*Smaller header 3 font size increase and color set to dark grey*/
+
+h3 {
+    font-size: 130%;
+    color: #0B132B;
+}
+
+
+/* Color and alignment changes to footer element*/
+
+footer {
+    background-color: #83C5BE;
+    text-align: center;
+    justify-content: center;
+    color: orangered;
+    /*Text color is orangered*/
+}
+
+
+/*Sidebar single ID selector*/
+
+#sidebar {
+    width: 20%;
+    background-color: #90D8F4;
+    padding: 2rem;
+    color: white;
+}
+
+
+/*Styling changes to all class selectors within the navigation menu*/
+
+.navMenu {
+    list-style-type: none;
+    padding: 0%;
+    color: white;
+}
+
+.icons {
+    font-size: 50px;
+}
+
+.fa-google {
+    color: red;
+}
+
+.fa-whatsapp {
+    color: green;
+}
+
+.fa-telegram {
+    color: blue
+}
+
+.icons :hover {
+    cursor: pointer;
+    color: darkslategrey;
+}
