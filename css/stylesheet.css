@@ -2,22 +2,29 @@
 
 body {
     font-family: sans-serif;
-    font-size: 110%;
+    font-size: 120%;
     color: black;
     margin: 0;
     display: flex;
     flex-direction: column;
     padding: 20px;
-    background-color: #90D8F4;
+    background-color: #74666b;
 }
 
 
 /*Sets background color with color codes and ad 20px padding*/
 
 .content {
-    background-color: #CAF0F8;
     padding: 20px;
     background-color: #90D8F4;
+    background-image: url(/images/1\ -\ Copy1.jpg);
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 600px) {
+    .content {
+        padding: 10px
+    }
 }
 
 
@@ -32,11 +39,12 @@ body {
 
 /*An Id selector for a single element-my profile photo within my HTML header tag*/
 
-#profileLarge {
+#profilePicture {
     width: 25%;
     height: 25%;
     border-radius: 50%;
-    border: 6px solid #90D8F4;
+    border: 8px solid;
+    border-color: #74666b;
     /*Sets a border around my profile photo within the header element*/
 }
 
@@ -44,14 +52,14 @@ body {
     width: 25%;
     height: 25%;
     border-radius: 50%;
-    border: 6px solid #90D8F4;
+    border: 6px solid #74666b;
 }
 
 #profileSmall {
     width: 25%;
     height: 25%;
     border-radius: 50%;
-    border: 6px solid #90D8F4;
+    border: 6px solid #74666b;
 }
 
 
@@ -67,8 +75,8 @@ header {
 
 .heading {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 130%;
-    background-color: #83C5BE;
+    font-size: 140%;
+    background-image: linear-gradient(to left bottom, #51454c, #63555b, #74666b, #87787b, #998a8c);
     color: black;
     padding-top: 10px;
 }
@@ -76,14 +84,14 @@ header {
 @media screen and (max-width:650px) {
     #profileSmall {
         border-radius: 50%;
-        border: 5px solid #90D8F4;
+        border: 6px solid #74666b;
     }
 }
 
 @media screen and (max-width:1400px) {
     #profileMedium {
         border-radius: 50%;
-        border: 5px solid #90D8F4;
+        border: 6px solid #74666b;
     }
 }
 
@@ -103,11 +111,17 @@ h3 {
     color: #0B132B;
 }
 
+.allMySkills {
+    text-align: left;
+    padding-left: 1%;
+}
+
 
 /* Color and alignment changes to footer element*/
 
 footer {
     background-color: #83C5BE;
+    background-image: url(/images/pexels-fwstudio-139312.jpg);
     text-align: center;
     justify-content: center;
     color: orangered;
@@ -119,9 +133,8 @@ footer {
 
 #sidebar {
     width: 20%;
-    background-color: #90D8F4;
+    background-color: #74666b;
     padding: 2rem;
-    color: white;
 }
 
 
@@ -129,26 +142,39 @@ footer {
 
 .navMenu {
     list-style-type: none;
-    padding: 0%;
+    padding: 5%;
 }
 
 .icons {
-    font-size: 50px;
+    font-size: 60px;
 }
 
 .fa-google {
     color: red;
+    padding-right: 2%;
+    padding-left: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 .fa-whatsapp {
     color: green;
+    padding-right: 2%;
+    padding-left: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 .fa-telegram {
-    color: blue
+    color: blue;
+    padding-right: 2%;
+    padding-left: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 .icons :hover {
     cursor: pointer;
     color: darkslategrey;
+    transform: scale(150%);
 }
