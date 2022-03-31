@@ -129,9 +129,9 @@ footer {
 }
 
 
-/*Sidebar single ID selector*/
+/*Sidebar single class selector*/
 
-#sidebar {
+.sidebar {
     width: 20%;
     background-color: #74666b;
     padding: 2rem;
