@@ -1,14 +1,4 @@
     /*Styling sheet for everything contained within my HTML body*/
-    
-    body {
-        font-family: sans-serif;
-        font-size: 120%;
-        color: black;
-        margin: 0;
-        display: flex;
-        background-image: url(/images/1\ -\ Copy1.jpg);
-        background-repeat: no-repeat;
-    }
     /*Sets background color with color codes and ad 20px padding*/
     
     .content {
@@ -31,10 +21,10 @@
     /*An Id selector for a single element-my profile photo within my HTML header tag*/
     
     #profilePicture {
-        width: 25%;
-        height: 25%;
+        width: 288px;
+        height: 288px;
         border-radius: 50%;
-        border: 8px solid;
+        border: 6px solid;
         border-color: #74666b;
         /*Sets a border around my profile photo within the header element*/
     }
@@ -96,29 +86,42 @@
     
     .allMySkills {
         text-align: left;
-        padding-left: 1%;
+        padding-left: 2%;
     }
     /* Color and alignment changes to footer element*/
     
     footer {
-        background-color: #83C5BE;
+        /* background-color: background-color: #83C5BE;
+        */
         background-image: url(/images/pexels-fwstudio-139312.jpg);
         text-align: center;
         justify-content: center;
         color: orangered;
         /*Text color is orangered*/
+        display: inline-block;
+        padding-top: 2%;
     }
     /*Sidebar single class selector*/
     
     .sidebar {
         background-color: #74666b;
         padding: 2rem;
+        height: 135%;
     }
     /*Styling changes to all class selectors within the navigation menu*/
     
     .navMenu {
         list-style-type: none;
-        padding: 5%;
+        padding-left: 3%;
+    }
+    
+    .menu {
+        color: black;
+        padding-left: 3%;
+    }
+    
+    a {
+        color: darkblue;
     }
     
     .icons {
@@ -156,18 +159,30 @@
     }
     
     body {
+        font-family: sans-serif;
+        font-size: 120%;
+        color: black;
+        margin: 0%;
+        /*
+        background-image: url(/images/1\ -\ Copy1.jpg);
+        opacity: 0.7;
+        */
         display: grid;
         width: 100%;
         height: 100%;
-        grid-template-columns: 30% 35% 35%;
+        grid-template-columns: 20% 40% 40%;
         grid-template-rows: auto;
         grid-template-areas: "header header header" "sidebar ex ed" "sidebar sk carou" "footer footer footer";
         column-gap: 10px;
-        row-gap: 15px;
+        /*row-gap: 15px;*/
     }
     
     #header {
         grid-area: header;
+    }
+    
+    #sidebar {
+        grid-area: sidebar;
     }
     
     #a {
@@ -180,4 +195,12 @@
     
     #c {
         grid-area: sk;
+    }
+    
+    #d {
+        grid-area: carou;
+    }
+    
+    #footer {
+        grid-area: footer;
     }
