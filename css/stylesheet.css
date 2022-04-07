@@ -3,6 +3,7 @@
     
     .content {
         padding: 20px;
+        background-image: linear-gradient(to right top, #c0a8bc, #c9b4c5, #d1c0cf, #daccd9, #e3d8e2);
     }
     
     @media screen and (max-width: 600px) {
@@ -75,13 +76,15 @@
     
     h2 {
         font-size: 160%;
-        color: orangered;
+        color: #DC2F02;
+        padding-top: 2%;
+        padding-bottom: 2%;
     }
     /*Smaller header 3 font size increase and color set to dark grey*/
     
     h3 {
         font-size: 130%;
-        color: #0B132B;
+        color: black;
     }
     
     .allMySkills {
@@ -172,7 +175,7 @@
         height: 100%;
         grid-template-columns: 20% 40% 40%;
         grid-template-rows: auto;
-        grid-template-areas: "header header header" "sidebar ex ed" "sidebar sk carou" "footer footer footer";
+        grid-template-areas: "header header header" "sidebar ed ex" "sidebar sk carou" "footer footer footer";
         column-gap: 10px;
         /*row-gap: 15px;*/
     }
@@ -186,11 +189,11 @@
     }
     
     #a {
-        grid-area: ex;
+        grid-area: ed;
     }
     
     #b {
-        grid-area: ed;
+        grid-area: ex;
     }
     
     #c {
