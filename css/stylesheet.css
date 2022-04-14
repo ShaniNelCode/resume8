@@ -34,14 +34,12 @@
         width: 25%;
         height: 25%;
         border-radius: 50%;
-        border: 6px solid #74666b;
     }
     
     #profileSmall {
         width: 25%;
         height: 25%;
         border-radius: 50%;
-        border: 6px solid #74666b;
     }
     /*Text alignment of text within my header element selector*/
     
@@ -63,7 +61,6 @@
     @media screen and (max-width:600px) {
         #profileSmall {
             border-radius: 50%;
-            border: 6px solid #74666b;
         }
     }
     /*medium devices (tablets)*/
@@ -71,7 +68,6 @@
     @media screen and (max-width:780px) {
         #profileMedium {
             border-radius: 50%;
-            border: 6px solid #74666b;
         }
     }
     /*Large devices (laptops/desktops)*/
@@ -79,7 +75,6 @@
     @media screen and (max-width:990px) {
         #profilePMedium {
             border-radius: 50%;
-            border: 6px solid #74666b;
         }
     }
     
@@ -153,7 +148,14 @@
     
     footer {
         background-color: #252525;
-        display: flex;
+        display: grid;
+        justify-content: space-around;
+        width: 100%;
+        height: 100%;
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+        grid-template-areas: "lin" "con" "soc";
+        column-gap: 10px;
         padding-top: 2%;
         padding-bottom: 4%;
         margin-bottom: 0%;
@@ -493,12 +495,24 @@
         grid-area: carou;
     }
     
+    */ #e {
+        grid-area: lin;
+    }
+    
+    #f {
+        grid-area: con;
+    }
+    
+    #g {
+        grid-area: soc;
+    }
+    
     #footer {
         grid-area: footer;
     }
     
     .footer {
-        display: flex;
+        display: grid;
     }
     
     .widget-title {
@@ -510,8 +524,12 @@
     
     .contactList {
         list-style-type: none;
-        display: inline-block;
+        display: grid;
         text-align: left;
+    }
+    
+    li {
+        padding-bottom: 10px;
     }
     
     .fa-address-book {
@@ -545,7 +563,7 @@
     }
     
     footer.main-footer {
-        padding: 20px;
+        display: grid;
     }
     
     footer ul {
