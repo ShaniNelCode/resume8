@@ -1,323 +1,29 @@
-    /*Styling sheet for everything contained within my HTML body*/
-    /*Sets background color with color codes and ad 20px padding*/
-    
-    .content {
-        padding: 20px;
-        background-image: linear-gradient(to right top, #977b85, #9e8b9a, #a69cac, #aeadbb, #b9bec8, #b6b9c2, #b3b5bd, #b0b0b7, #9c979d, #887f82, #716867, #5a534f);
-    }
-    
-    @media screen and (max-width: 600px) {
-        .content {
-            padding: 10px
-        }
-    }
-    /*Sets the type of display for my elements,dictates the direction of display and adddresses the x-and y-axis overflow*/
+/*Styling sheet for everything contained within my HTML body*/
+
+body {
+    font-family: sans-serif;
+    font-size: 120%;
+    color: black;
+    background-color: #63555b;
+    margin: 0%;
     /*
-.main {
-    display: flex;
-    flex-direction: row;
-    overflow: unset;
-}
-*/
-    /*An Id selector for a single element-my profile photo within my HTML header tag*/
-    
-    #profilePicture {
-        width: 288px;
-        height: 288px;
-        border-radius: 50%;
-        border: 6px solid;
-        border-color: #74666b;
-        /*Sets a border around my profile photo within the header element*/
-    }
-    
-    #profileMedium {
-        width: 25%;
-        height: 25%;
-        border-radius: 50%;
-    }
-    
-    #profileSmall {
-        width: 25%;
-        height: 25%;
-        border-radius: 50%;
-    }
-    /*Text alignment of text within my header element selector*/
-    
-    header {
-        text-align: center;
-        justify-content: center;
-    }
-    /*ID selector for header, adjusting text and background color, font type and size*/
-    
-    .heading {
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 140%;
-        background-image: url(/images/headerBack.jpg);
-        color: black;
-        padding-top: 10px;
-    }
-    /*mobile devices*/
-    
-    @media screen and (max-width:600px) {
-        #profileSmall {
-            border-radius: 50%;
-        }
-    }
-    /*medium devices (tablets)*/
-    
-    @media screen and (max-width:780px) {
-        #profileMedium {
-            border-radius: 50%;
-        }
-    }
-    /*Large devices (laptops/desktops)*/
-    
-    @media screen and (max-width:990px) {
-        #profilePMedium {
-            border-radius: 50%;
-        }
-    }
-    
-    @media screen and (min-width:991px) {
-        #profilePicture {
-            border-radius: 50%;
-            border: 6px solid #74666b;
-        }
-    }
-    /*Extra large devices*/
-    
-    @media screen and (max-width:1200px) {
-        #profilePicture {
-            border-radius: 50%;
-            border: 6px solid #74666b;
-        }
-    }
-    
-    @media screen and (min-width:1201px) {
-        #profilePicture {
-            border-radius: 50%;
-            border: 6px solid #74666b;
-        }
-    }
-    
-    @media screen and (min-width:1400px) {
-        #profilePicture {
-            border-radius: 50%;
-            border: 6px solid #74666b;
-        }
-    }
-    /*Font size increase for header 2 elements and color orangered*/
-    
-    .oneLink {
-        padding-top: 0px;
-        padding-bottom: 7px;
-    }
-    
-    a.codespaceLink:link {
-        color: #0466C8;
-    }
-    
-    a.codespaceLink:hover {
-        color: #03045E;
-        background-color: lightblue;
-    }
-    
-    a.codespaceLink:active {
-        text-decoration: none;
-        color: red;
-    }
-    
-    h2 {
-        font-size: 160%;
-        color: #DC2F02;
-        padding-top: 2%;
-        padding-bottom: 2%;
-    }
-    /*Smaller header 3 font size increase and color set to dark grey*/
-    
-    h3 {
-        font-size: 130%;
-        color: black;
-    }
-    
-    .allMySkills {
-        text-align: left;
-        padding-left: 2%;
-    }
-    /* Color and alignment changes to footer element*/
-    
-    footer {
-        background-color: #252525;
-        display: grid;
-        justify-content: space-around;
-        width: 100%;
-        height: 100%;
-        grid-template-rows: auto;
-        grid-template-columns: auto;
-        grid-template-areas: "lin" "con" "soc";
-        column-gap: 10px;
-        padding-top: 2%;
-        padding-bottom: 4%;
-        margin-bottom: 0%;
-    }
-    /*Sidebar single class selector*/
-    
-    .sidebar {
-        background-image: linear-gradient(to right top, #687378, #7a8687, #8f9a96, #a6ada6, #bfc0b8, #bfbdb5, #beb9b2, #bdb6b0, #a39c96, #8a837e, #726a66, #5a534f);
-        padding: 2rem;
-        height: 135%;
-    }
-    /*Styling changes to all class selectors within the navigation menu*/
-    
-    .navMenu {
-        list-style-type: none;
-        padding-left: 3%;
-    }
-    
-    .menu {
-        color: black;
-        padding-left: 3%;
-    }
-    
-    nav.navbar {
-        padding-left: 20px;
-        font-size: large;
-    }
-    
-    a.navbar-brand {
-        font-size: xx-large;
-    }
-    
-    button.navbar-toggler {
-        font-size: x-large;
-    }
-    
-    a.dropdown-link {
-        font-size: x-large;
-    }
-    
-    a.dropdown-link {
-        color: #00B4D8;
-    }
-    
-    a.dropdown-link:hover {
-        color: orangered;
-    }
-    
-    a.footerLinks {
-        color: orangered;
-    }
-    
-    a.footerLinks:hover {
-        color: #219EBC;
-    }
-    
-    .linkContent {
-        padding-bottom: 20px;
-    }
-    
-    #contact {
-        padding-bottom: 6%;
-    }
-    
-    .socialIcons {
-        font-size: 40px;
-        display: inline-flex;
-        text-align: left;
-        animation: infinite;
-        animation-duration: 4s;
-        animation-name: socialIcons;
-    }
-    /* 
-    @keyframes {
-        0% {
-            border-color: lightgreen;
-        }
-        25% {
-            border-color: lightcoral;
-        }
-        50% {
-            border-color: yellowgreen;
-        }
-        100% {
-            border-color: lightseagreen;
-        }
-    }
+    background-image: url(/images/1\ -\ Copy1.jpg);
+    opacity: 0.7;
     */
-    
-    .socialIcons :hover {
-        cursor: pointer;
-        border-color: purple;
-        transition: all 0.3s ease-in;
-    }
-    
-    .socialIcons::after {
-        border-color: violet;
-        transition: all 0.3s ease-out;
-    }
-    
-    .fa-google {
-        color: red;
-        padding-right: 8%;
-        padding-left: 8%;
-        padding-top: 8%;
-        padding-bottom: 8%;
-        background-color: #8f9a96;
-        border-radius: 50%;
-        border: 4px solid white;
-        margin-right: 15px;
-    }
-    
-    .fa-whatsapp {
-        color: green;
-        padding-right: 8%;
-        padding-left: 8%;
-        padding-top: 8%;
-        padding-bottom: 8%;
-        background-color: #8f9a96;
-        border-radius: 50%;
-        border: 4px solid white;
-        margin-right: 15px;
-    }
-    
-    .fa-telegram {
-        color: blue;
-        padding-right: 8%;
-        padding-left: 8%;
-        padding-top: 8%;
-        padding-bottom: 8%;
-        background-color: #8f9a96;
-        border-radius: 50%;
-        border: 4px solid white;
-        margin-right: 15px;
-    }
-    
-    .fa-github {
-        color: black;
-        padding-right: 8%;
-        padding-left: 8%;
-        padding-top: 8%;
-        padding-bottom: 8%;
-        background-color: #8f9a96;
-        border-radius: 50%;
-        border: 4px solid white;
-        margin-right: 15px;
-    }
-    
-    .fa-brands {
-        padding-right: 15px;
-        padding-left: 15px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-    
-    .fab {
-        padding-right: 15px;
-        padding-left: 15px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-    
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 20% 40% 40%;
+    grid-template-rows: auto;
+    grid-template-areas: "header header header" "sidebar ed ex" "sidebar sk carou" "footer footer footer";
+    column-gap: 10px;
+    /*row-gap: 15px;*/
+}
+
+
+/*mobile devices smaller than 600px*/
+
+@media only screen and (max-width: 600px) {
     body {
         font-family: sans-serif;
         font-size: 120%;
@@ -325,9 +31,75 @@
         background-color: #63555b;
         margin: 0%;
         /*
-        background-image: url(/images/1\ -\ Copy1.jpg);
-        opacity: 0.7;
-        */
+    background-image: url(/images/1\ -\ Copy1.jpg);
+    opacity: 0.7;
+    */
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas: "header" "sidebar" "ed" "ex" "sk" "carou" "footer";
+        column-gap: 10px;
+        /*row-gap: 15px;*/
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    body {
+        font-family: sans-serif;
+        font-size: 120%;
+        color: black;
+        background-color: #63555b;
+        margin: 0%;
+        /*
+    background-image: url(/images/1\ -\ Copy1.jpg);
+    opacity: 0.7;
+    */
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas: "header" "sidebar" "ed" "ex" "sk" "carou" "footer";
+        column-gap: 10px;
+        /*row-gap: 15px;*/
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    body {
+        font-family: sans-serif;
+        font-size: 120%;
+        color: black;
+        background-color: #63555b;
+        margin: 0%;
+        /*
+    background-image: url(/images/1\ -\ Copy1.jpg);
+    opacity: 0.7;
+    */
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas: "header" "sidebar" "ed" "ex" "sk" "carou" "footer";
+        column-gap: 10px;
+        /*row-gap: 15px;*/
+    }
+}
+
+@media only screen and (min-width: 991px) {
+    body {
+        font-family: sans-serif;
+        font-size: 120%;
+        color: black;
+        background-color: #63555b;
+        margin: 0%;
+        /*
+    background-image: url(/images/1\ -\ Copy1.jpg);
+    opacity: 0.7;
+    */
         display: grid;
         width: 100%;
         height: 100%;
@@ -337,248 +109,564 @@
         column-gap: 10px;
         /*row-gap: 15px;*/
     }
-    /*mobile devices smaller than 600px*/
-    
-    @media only screen and (max-width: 600px) {
-        body {
-            font-family: sans-serif;
-            font-size: 120%;
-            color: black;
-            background-color: #63555b;
-            margin: 0%;
-            /*
-        background-image: url(/images/1\ -\ Copy1.jpg);
-        opacity: 0.7;
-        */
-            display: grid;
-            width: 100%;
-            height: 100%;
-            grid-template-columns: 100%;
-            grid-template-rows: auto;
-            grid-template-areas: "header" "sidebar" "ed" "ex" "sk" "carou" "footer";
-            column-gap: 10px;
-            /*row-gap: 15px;*/
-        }
-    }
-    
-    @media only screen and (max-width: 780px) {
-        body {
-            font-family: sans-serif;
-            font-size: 120%;
-            color: black;
-            background-color: #63555b;
-            margin: 0%;
-            /*
-        background-image: url(/images/1\ -\ Copy1.jpg);
-        opacity: 0.7;
-        */
-            display: grid;
-            width: 100%;
-            height: 100%;
-            grid-template-columns: 100%;
-            grid-template-rows: auto;
-            grid-template-areas: "header" "sidebar" "ed" "ex" "sk" "carou" "footer";
-            column-gap: 10px;
-            /*row-gap: 15px;*/
-        }
-    }
-    
-    @media only screen and (max-width: 990px) {
-        body {
-            font-family: sans-serif;
-            font-size: 120%;
-            color: black;
-            background-color: #63555b;
-            margin: 0%;
-            /*
-        background-image: url(/images/1\ -\ Copy1.jpg);
-        opacity: 0.7;
-        */
-            display: grid;
-            width: 100%;
-            height: 100%;
-            grid-template-columns: 100%;
-            grid-template-rows: auto;
-            grid-template-areas: "header" "sidebar" "ed" "ex" "sk" "carou" "footer";
-            column-gap: 10px;
-            /*row-gap: 15px;*/
-        }
-    }
-    
-    @media only screen and (min-width: 991px) {
-        body {
-            font-family: sans-serif;
-            font-size: 120%;
-            color: black;
-            background-color: #63555b;
-            margin: 0%;
-            /*
-        background-image: url(/images/1\ -\ Copy1.jpg);
-        opacity: 0.7;
-        */
-            display: grid;
-            width: 100%;
-            height: 100%;
-            grid-template-columns: 20% 40% 40%;
-            grid-template-rows: auto;
-            grid-template-areas: "header header header" "sidebar ed ex" "sidebar sk carou" "footer footer footer";
-            column-gap: 10px;
-            /*row-gap: 15px;*/
-        }
-    }
-    
-    @media only screen and (min-width: 1200px) {
-        body {
-            font-family: sans-serif;
-            font-size: 120%;
-            color: black;
-            background-color: #63555b;
-            margin: 0%;
-            /*
-        background-image: url(/images/1\ -\ Copy1.jpg);
-        opacity: 0.7;
-        */
-            display: grid;
-            width: 100%;
-            height: 100%;
-            grid-template-columns: 20% 40% 40%;
-            grid-template-rows: auto;
-            grid-template-areas: "header header header" "sidebar ed ex" "sidebar sk carou" "footer footer footer";
-            column-gap: 10px;
-            /*row-gap: 15px;*/
-        }
-    }
-    
-    @media only screen and (min-width: 1400px) {
-        body {
-            font-family: sans-serif;
-            font-size: 120%;
-            color: black;
-            background-color: #63555b;
-            margin: 0%;
-            /*
-        background-image: url(/images/1\ -\ Copy1.jpg);
-        opacity: 0.7;
-        */
-            display: grid;
-            width: 100%;
-            height: 100%;
-            grid-template-columns: 20% 40% 40%;
-            grid-template-rows: auto;
-            grid-template-areas: "header header header" "sidebar ed ex" "sidebar sk carou" "footer footer footer";
-            column-gap: 10px;
-            /*row-gap: 15px;*/
-        }
-    }
-    
-    #header {
-        grid-area: header;
-    }
-    
-    #sidebar {
-        grid-area: sidebar;
-    }
-    
-    #a {
-        grid-area: ed;
-    }
-    
-    #b {
-        grid-area: ex;
-    }
-    
-    #c {
-        grid-area: sk;
-    }
-    
-    #d {
-        grid-area: carou;
-    }
-    
-    */ #e {
-        grid-area: lin;
-    }
-    
-    #f {
-        grid-area: con;
-    }
-    
-    #g {
-        grid-area: soc;
-    }
-    
-    #footer {
-        grid-area: footer;
-    }
-    
-    .footer {
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        font-family: sans-serif;
+        font-size: 120%;
+        color: black;
+        background-color: #63555b;
+        margin: 0%;
+        /*
+    background-image: url(/images/1\ -\ Copy1.jpg);
+    opacity: 0.7;
+    */
         display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 20% 40% 40%;
+        grid-template-rows: auto;
+        grid-template-areas: "header header header" "sidebar ed ex" "sidebar sk carou" "footer footer footer";
+        column-gap: 10px;
+        /*row-gap: 15px;*/
     }
-    
-    .widget-title {
-        text-align: left;
-        padding-bottom: 35px;
-        color: white;
-        font-size: x-large;
-    }
-    
-    .contactList {
-        list-style-type: none;
+}
+
+@media only screen and (min-width: 1400px) {
+    body {
+        font-family: sans-serif;
+        font-size: 120%;
+        color: black;
+        background-color: #63555b;
+        margin: 0%;
+        /*
+    background-image: url(/images/1\ -\ Copy1.jpg);
+    opacity: 0.7;
+    */
         display: grid;
-        text-align: left;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 20% 40% 40%;
+        grid-template-rows: auto;
+        grid-template-areas: "header header header" "sidebar ed ex" "sidebar sk carou" "footer footer footer";
+        column-gap: 10px;
+        /*row-gap: 15px;*/
     }
-    
-    li {
-        padding-bottom: 10px;
+}
+
+
+/*Sets background color with color codes and ad 20px padding*/
+
+.content {
+    padding: 20px;
+    background-image: linear-gradient(to right top, #977b85, #9e8b9a, #a69cac, #aeadbb, #b9bec8, #b6b9c2, #b3b5bd, #b0b0b7, #9c979d, #887f82, #716867, #5a534f);
+}
+
+@media screen and (max-width: 600px) {
+    .content {
+        padding: 10px
     }
-    
-    .fa-address-book {
-        color: #00B4D8;
-        font-size: 30px;
+}
+
+
+/*Sets the type of display for my elements,dictates the direction of display and adddresses the x-and y-axis overflow*/
+
+
+/*
+.main {
+    display: flex;
+    flex-direction: row;
+    overflow: unset;
+}
+*/
+
+
+/*An Id selector for a single element-my profile photo within my HTML header tag*/
+
+#profilePicture {
+    width: 288px;
+    height: 288px;
+    border-radius: 50%;
+    border: 6px solid;
+    border-color: #74666b;
+    /*Sets a border around my profile photo within the header element*/
+}
+
+#profileMedium {
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+}
+
+#profileSmall {
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+}
+
+
+/*Text alignment of text within my header element selector*/
+
+header {
+    text-align: center;
+    justify-content: center;
+}
+
+
+/*ID selector for header, adjusting text and background color, font type and size*/
+
+.heading {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 140%;
+    background-image: url(/images/headerBack.jpg);
+    color: black;
+    padding-top: 10px;
+}
+
+
+/*mobile devices*/
+
+@media screen and (max-width:600px) {
+    #profileSmall {
+        border-radius: 50%;
     }
-    
-    .fa-envelope {
-        color: #00B4D8;
-        font-size: 30px;
+}
+
+
+/*medium devices (tablets)*/
+
+@media screen and (max-width:780px) {
+    #profileMedium {
+        border-radius: 50%;
     }
-    
-    .fa-phone {
-        color: #00B4D8;
-        font-size: 30px;
+}
+
+
+/*Large devices (laptops/desktops)*/
+
+@media screen and (max-width:990px) {
+    #profilePMedium {
+        border-radius: 50%;
     }
-    
-    #sa {
-        padding-left: 15px;
-        color: #ADB5BD;
+}
+
+@media screen and (min-width:991px) {
+    #profilePicture {
+        border-radius: 50%;
+        border: 6px solid #74666b;
     }
-    
-    #en {
-        padding-left: 15px;
-        color: #ADB5BD;
+}
+
+
+/*Extra large devices*/
+
+@media screen and (max-width:1200px) {
+    #profilePicture {
+        border-radius: 50%;
+        border: 6px solid #74666b;
     }
-    
-    #ph {
-        padding-left: 15px;
-        color: #ADB5BD;
+}
+
+@media screen and (min-width:1201px) {
+    #profilePicture {
+        border-radius: 50%;
+        border: 6px solid #74666b;
     }
-    
-    footer.main-footer {
-        display: grid;
+}
+
+@media screen and (min-width:1400px) {
+    #profilePicture {
+        border-radius: 50%;
+        border: 6px solid #74666b;
     }
-    
-    footer ul {
-        list-style-type: none;
-        padding-left: 0px;
+}
+
+
+/*Font size increase for header 2 elements and color orangered*/
+
+.oneLink {
+    padding-top: 0px;
+    padding-bottom: 7px;
+}
+
+a.codespaceLink:link {
+    color: #0466C8;
+}
+
+a.codespaceLink:hover {
+    color: #03045E;
+    background-color: lightblue;
+}
+
+a.codespaceLink:active {
+    text-decoration: none;
+    color: red;
+}
+
+h2 {
+    font-size: 160%;
+    color: #DC2F02;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+
+/*Smaller header 3 font size increase and color set to dark grey*/
+
+h3 {
+    font-size: 130%;
+    color: black;
+}
+
+.allMySkills {
+    text-align: left;
+    padding-left: 2%;
+}
+
+
+/*Sidebar single class selector*/
+
+.sidebar {
+    background-image: linear-gradient(to right top, #687378, #7a8687, #8f9a96, #a6ada6, #bfc0b8, #bfbdb5, #beb9b2, #bdb6b0, #a39c96, #8a837e, #726a66, #5a534f);
+    padding: 2rem;
+    height: 135%;
+}
+
+
+/*Styling changes to all class selectors within the navigation menu*/
+
+.navMenu {
+    list-style-type: none;
+    padding-left: 3%;
+}
+
+.menu {
+    color: black;
+    padding-left: 3%;
+}
+
+nav.navbar {
+    padding-left: 20px;
+    font-size: large;
+}
+
+a.navbar-brand {
+    font-size: xx-large;
+}
+
+button.navbar-toggler {
+    font-size: x-large;
+}
+
+a.dropdown-link {
+    font-size: x-large;
+}
+
+a.dropdown-link {
+    color: #00B4D8;
+}
+
+a.dropdown-link:hover {
+    color: orangered;
+}
+
+
+/* Color and alignment changes to footer element*/
+
+footer {
+    background-color: #252525;
+    display: grid;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas: "lin" "con" "soc";
+    column-gap: 10px;
+    padding-top: 2%;
+    padding-bottom: 4%;
+    margin-bottom: 0%;
+}
+
+a.footerLinks {
+    color: orangered;
+}
+
+a.footerLinks:hover {
+    color: #219EBC;
+}
+
+.linkContent {
+    padding-bottom: 20px;
+}
+
+#contact {
+    padding-bottom: 6%;
+}
+
+.socialIcons {
+    font-size: 40px;
+    display: inline-flex;
+    text-align: left;
+    animation: infinite;
+    animation-duration: 4s;
+    animation-name: socialIcons;
+}
+
+.socialIcons :hover {
+    cursor: pointer;
+    border-color: purple;
+    transition: all 0.3s ease-in;
+}
+
+.socialIcons::after {
+    border-color: violet;
+    transition: all 0.3s ease-out;
+}
+
+@keyframes google {
+    0% {
+        border-color: lightgreen;
     }
-    
-    .widget.no-box {
-        padding-right: 100px;
-        padding-left: 100px;
-        list-style-type: none;
-        text-align: left;
-        justify-content: left;
+    25% {
+        border-color: lightcoral;
     }
-    
-    .far {
-        display: inline;
+    50% {
+        border-color: yellowgreen;
     }
+    100% {
+        border-color: lightseagreen;
+    }
+}
+
+.fa-google {
+    color: red;
+    padding-right: 8%;
+    padding-left: 8%;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    background-color: #8f9a96;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-right: 15px;
+    animation-name: google;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes whatsapp {
+    0% {
+        border-color: lightgreen;
+    }
+    25% {
+        border-color: lightcoral;
+    }
+    50% {
+        border-color: yellowgreen;
+    }
+    100% {
+        border-color: lightseagreen;
+    }
+}
+
+.fa-whatsapp {
+    color: green;
+    padding-right: 8%;
+    padding-left: 8%;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    background-color: #8f9a96;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-right: 15px;
+    animation-name: whatsapp;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes telegram {
+    0% {
+        border-color: lightgreen;
+    }
+    25% {
+        border-color: lightcoral;
+    }
+    50% {
+        border-color: yellowgreen;
+    }
+    100% {
+        border-color: lightseagreen;
+    }
+}
+
+.fa-telegram {
+    color: blue;
+    padding-right: 8%;
+    padding-left: 8%;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    background-color: #8f9a96;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-right: 15px;
+    animation-name: telegram;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes github {
+    0% {
+        border-color: lightgreen;
+    }
+    25% {
+        border-color: lightcoral;
+    }
+    50% {
+        border-color: yellowgreen;
+    }
+    100% {
+        border-color: lightseagreen;
+    }
+}
+
+.fa-github {
+    color: black;
+    padding-right: 8%;
+    padding-left: 8%;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    background-color: #8f9a96;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-right: 15px;
+    animation-name: github;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.fa-brands {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.fab {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#header {
+    grid-area: header;
+}
+
+#sidebar {
+    grid-area: sidebar;
+}
+
+#a {
+    grid-area: ed;
+}
+
+#b {
+    grid-area: ex;
+}
+
+#c {
+    grid-area: sk;
+}
+
+#d {
+    grid-area: carou;
+}
+
+*/ #e {
+    grid-area: lin;
+}
+
+#f {
+    grid-area: con;
+}
+
+#g {
+    grid-area: soc;
+}
+
+#footer {
+    grid-area: footer;
+}
+
+.footer {
+    display: grid;
+}
+
+.widget-title {
+    text-align: left;
+    padding-bottom: 35px;
+    color: white;
+    font-size: x-large;
+}
+
+.contactList {
+    list-style-type: none;
+    display: grid;
+    text-align: left;
+}
+
+li {
+    padding-bottom: 10px;
+}
+
+.fa-address-book {
+    color: #00B4D8;
+    font-size: 30px;
+}
+
+.fa-envelope {
+    color: #00B4D8;
+    font-size: 30px;
+}
+
+.fa-phone {
+    color: #00B4D8;
+    font-size: 30px;
+}
+
+#sa {
+    padding-left: 15px;
+    color: #ADB5BD;
+}
+
+#en {
+    padding-left: 15px;
+    color: #ADB5BD;
+}
+
+#ph {
+    padding-left: 15px;
+    color: #ADB5BD;
+}
+
+footer.main-footer {
+    display: grid;
+}
+
+footer ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.widget.no-box {
+    padding-right: 100px;
+    padding-left: 100px;
+    list-style-type: none;
+    text-align: left;
+    justify-content: left;
+}
+
+.far {
+    display: inline;
+}
