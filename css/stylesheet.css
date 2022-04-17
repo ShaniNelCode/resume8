@@ -409,20 +409,6 @@ a.footerLinks:hover {
     font-size: 40px;
     display: inline-flex;
     text-align: left;
-    animation: infinite;
-    animation-duration: 4s;
-    animation-name: socialIcons;
-}
-
-.socialIcons :hover {
-    cursor: pointer;
-    border-color: purple;
-    transition: all 0.3s ease-in;
-}
-
-.socialIcons::after {
-    border-color: violet;
-    transition: all 0.3s ease-out;
 }
 
 @keyframes google {
@@ -434,6 +420,9 @@ a.footerLinks:hover {
     }
     50% {
         border-color: yellowgreen;
+    }
+    75% {
+        border-color: orange;
     }
     100% {
         border-color: lightseagreen;
@@ -465,6 +454,9 @@ a.footerLinks:hover {
     50% {
         border-color: yellowgreen;
     }
+    75% {
+        border-color: orange;
+    }
     100% {
         border-color: lightseagreen;
     }
@@ -495,6 +487,9 @@ a.footerLinks:hover {
     50% {
         border-color: yellowgreen;
     }
+    75% {
+        border-color: orange;
+    }
     100% {
         border-color: lightseagreen;
     }
@@ -524,6 +519,9 @@ a.footerLinks:hover {
     }
     50% {
         border-color: yellowgreen;
+    }
+    75% {
+        border-color: orange;
     }
     100% {
         border-color: lightseagreen;
@@ -583,7 +581,7 @@ a.footerLinks:hover {
     grid-area: carou;
 }
 
-*/ #e {
+#e {
     grid-area: lin;
 }
 
