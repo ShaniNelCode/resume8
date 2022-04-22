@@ -160,6 +160,7 @@ body {
 
 .content {
     padding: 20px;
+    margin-bottom: 20px;
     background-image: linear-gradient(to right top, #977b85, #9e8b9a, #a69cac, #aeadbb, #b9bec8, #b6b9c2, #b3b5bd, #b0b0b7, #9c979d, #887f82, #716867, #5a534f);
 }
 
@@ -330,7 +331,7 @@ h3 {
 .sidebar {
     background-image: linear-gradient(to right top, #687378, #7a8687, #8f9a96, #a6ada6, #bfc0b8, #bfbdb5, #beb9b2, #bdb6b0, #a39c96, #8a837e, #726a66, #5a534f);
     padding: 2rem;
-    height: 135%;
+    height: 98%;
 }
 
 
@@ -374,19 +375,19 @@ a.dropdown-link:hover {
 
 /* Color and alignment changes to footer element*/
 
-footer {
+#footer {
     background-color: #252525;
     display: grid;
     justify-content: space-around;
     width: 100%;
-    height: 100%;
+    height: 70%;
     grid-template-rows: auto;
     grid-template-columns: auto;
-    grid-template-areas: "lin" "con" "soc";
+    grid-template-areas: "footer" "footer" "footer";
     column-gap: 10px;
     padding-top: 2%;
     padding-bottom: 4%;
-    margin-bottom: 0%;
+    margin-bottom: 10%;
 }
 
 a.footerLinks {
@@ -579,18 +580,6 @@ a.footerLinks:hover {
 
 #d {
     grid-area: carou;
-}
-
-#e {
-    grid-area: lin;
-}
-
-#f {
-    grid-area: con;
-}
-
-#g {
-    grid-area: soc;
 }
 
 #footer {
